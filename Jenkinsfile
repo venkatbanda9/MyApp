@@ -1,3 +1,4 @@
+pipeline{
     agent any
     stages{
     stage('CDownload'){
@@ -67,5 +68,6 @@
             }
             }
         }
+    }
     }
 }
