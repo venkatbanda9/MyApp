@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-    stage('CDownload'){
+    stage('CDownload_Master'){
         steps{
             script{
             try{
@@ -15,7 +15,7 @@ pipeline{
         }
         }
     }
-    stage('CBuild'){
+    stage('CBuild_Master'){
         steps{
             script{
             try{
@@ -28,7 +28,7 @@ pipeline{
             }
         }
     }
-    stage('CDeploy'){
+    stage('CDeploy_Master'){
         steps{
             script{
             try{
@@ -41,7 +41,7 @@ pipeline{
             }
         }
     }
-    stage('CTest'){
+    stage('CTest_Master'){
         steps{
             script{
             try{
@@ -55,7 +55,7 @@ pipeline{
             }
         }
     }
-    stage(CDeploymenttoPROD){
+    stage(CDeploymenttoPROD_Master){
         steps{
             script{
             try{
