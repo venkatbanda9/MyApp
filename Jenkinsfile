@@ -22,6 +22,6 @@ node('master'){
 }
 node('slave'){
     stage('Cont Delivery'){
-        sh 'scp /home/ec2-user/workspace/workspace/ScriptedPLDeployFromSlave/test.war ubuntu@13.52.231.195:/var/lib/tomcat9/webapps/production.war'
+        sh 'scp /home/ec2-user/workspace/workspace/ScriptedPLDeployFromSlave/test.war ec2-user@54.237.58.55:/var/www/html/production.war'
     }
 }
