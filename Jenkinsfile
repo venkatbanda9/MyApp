@@ -25,3 +25,4 @@ node('slave'){
         sh 'scp /home/ec2-user/workspace/workspace/ScriptedPLDeployFromSlave/test.war ubuntu@13.52.231.195:/var/lib/tomcat9/webapps/production.war'
     }
 }
+
